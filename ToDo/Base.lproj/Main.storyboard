@@ -137,18 +137,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of the todo will go here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgo-35-0Fb">
-                                <rect key="frame" x="95" y="212" width="224" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the todo will go here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgo-35-0Fb">
+                                <rect key="frame" x="95" y="213" width="224" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-m8-cl9">
-                                <rect key="frame" x="107" y="366" width="200" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXJ-m8-cl9">
+                                <rect key="frame" x="107" y="369" width="200" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Mark this todo as complete"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mark this todo as complete" titleAlignment="center"/>
                                 <connections>
                                     <action selector="completeTapped:" destination="HTA-Mh-oAs" eventType="touchUpInside" id="Tez-4r-PKp"/>
                                 </connections>
@@ -156,6 +154,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XK2-K9-gyx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dXJ-m8-cl9" firstAttribute="top" secondItem="xgo-35-0Fb" secondAttribute="bottom" constant="135" id="00n-1b-6J6"/>
+                            <constraint firstItem="xgo-35-0Fb" firstAttribute="leading" secondItem="XK2-K9-gyx" secondAttribute="leading" constant="95" id="3mH-VL-Vhy"/>
+                            <constraint firstItem="XK2-K9-gyx" firstAttribute="trailing" secondItem="dXJ-m8-cl9" secondAttribute="trailing" constant="107" id="GoH-FH-UZB"/>
+                            <constraint firstItem="dXJ-m8-cl9" firstAttribute="leading" secondItem="XK2-K9-gyx" secondAttribute="leading" constant="107" id="HPs-Yf-a6a"/>
+                            <constraint firstItem="xgo-35-0Fb" firstAttribute="top" secondItem="XK2-K9-gyx" secondAttribute="top" constant="125" id="dEm-cE-kmq"/>
+                            <constraint firstItem="XK2-K9-gyx" firstAttribute="trailing" secondItem="xgo-35-0Fb" secondAttribute="trailing" constant="95" id="iIb-UV-UB8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EjM-QE-nvJ"/>
                     <connections>
